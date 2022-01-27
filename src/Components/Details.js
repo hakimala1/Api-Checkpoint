@@ -27,6 +27,7 @@ function Details() {
             <ListGroup.Item>{user.email}</ListGroup.Item>
             <ListGroup.Item>{user.phone}</ListGroup.Item>
             <ListGroup.Item>{user.website}</ListGroup.Item>
+            <ListGroup.Item>{user&&user.address&&user.address.street}</ListGroup.Item>
             </ListGroup>
             <Button onClick={()=>navigate(-1)}>Go Back</Button>
             </Card>
